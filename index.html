@@ -1,10 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>crap-portfolio</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is a great website">
+  <title>Gulalek Charyyeva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="photo.jpg" class="profile-img">
+    <nav>
+      <ul>
+        <li><a href="#greeting">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="greeting">
+      <div class="section-inner">
+        <img src="photo.jpg" class="profile-img">
+        <h1>Hi, I'm Gulalek Charyyeva.</h1>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section-inner">
+        <h2>About me</h2>
+        <p>I'm Gulalek. I finished my first year at the Ulsan National Institute of Science of Technology(UNIST). This is my second week on my internship. I am curently learning html and css. By utilizing my new skills I created this simple website.</p>
+        <h3>Achievements</h3>
+        <ul>
+          <li>Winner of a bronze medal at the National Mathematical Olimpiad, 2018</li>
+          <li>Winner of a gold medal at the AMITY International Olympiad, 2018</li>
+          <li>I coded a website, 2020</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="section-inner">
+        <h2>Contact me</h2>
+        <p>You can find me on:</p>
+        <ul>
+          <li><a href="https://www.instagram.com/gulalek___30/" target="-blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/Gulalek Charyyeva/" target="-blank">Facebook</a></li>
+        </ul>
+        <p>Or, you can <a href="mailto:gulalekch@gmail.com">send me an email</a></p>
+      </div>
+    </section>
 
-  </body>
-</html>      
+  </main>
+  <footer>
+    GULALEK CHARYYEVA © 2020.
+  </footer>
+</body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+  }
+
+  header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #FFC0CB;
+  }
+
+  header * {
+    display: inline;
+    height: 50px;
+  }
+
+  header ul {
+    padding: 0;
+  }
+
+  header li{
+    margin-left: 50px;
+  }
+
+  section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #greeting .profile-img {
+    width: 250px;
+    border-radius: 50%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 50px;
+  }
+
+  #greeting h1 {
+    font-size: 3em;
+  }
+
+  section h2 {
+    font-size: 2.5em;
+  }
+
+  section h3 {
+    font-size: 1.5em;
+  }
+
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #greeting {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(https://thumbs.dreamstime.com/b/floral-repeating-seamless-pattern-pretty-flower-background-pastel-color-white-72750202.jpg);
+  }
+
+    #about {
+      background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(https://archziner.com/wp-content/uploads/2020/07/pretty-flower-backgrounds-drawings-of-pink-blue-green-flowers-plants-drawn-on-white-background.jpg)
+    }
+
+    #contact {
+      background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQdfkXLi4PWEsvZTMPNqnpxeOIsHrgMBmau8Q&usqp=CAU)
+</style>
